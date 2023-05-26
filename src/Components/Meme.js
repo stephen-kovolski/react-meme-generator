@@ -1,10 +1,12 @@
 import React from "react";
-import memes from "../memesData";
+import memesData from "../memesData";
 
 function Meme(){
 
+    const [memeImage, setMemeImage] = React.useState("")
+
     function handleClick(){
-         let memesArray = memes.data.memes;
+         let memesArray = memesData.data.memes;
          let randomNumber = Math.floor(Math.random() * memesArray.length)
          const url = memesArray[randomNumber].url
          console.log(url);
