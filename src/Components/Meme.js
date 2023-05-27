@@ -8,8 +8,8 @@ function Meme(){
     function handleClick(){
          let memesArray = memesData.data.memes;
          let randomNumber = Math.floor(Math.random() * memesArray.length)
-         const url = memesArray[randomNumber].url
-         console.log(url);
+         setMemeImage(memesArray[randomNumber].url)
+         
     }
 
     return(
@@ -18,7 +18,8 @@ function Meme(){
                 <input type="text" className="form--input" placeholder="top text" />
                 <input type="text" className="form--input" placeholder="bottom text"></input>
                 <button className="form--button" onClick={handleClick}>Get A New Meme Image</button>
-            </div>   
+            </div>
+            <img src={memeImage} className="meme--image"/>   
         </main>
     )
 }
