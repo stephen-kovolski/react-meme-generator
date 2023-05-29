@@ -27,3 +27,5 @@ function Meme(){
 }
 
 export default Meme;
+
+export
