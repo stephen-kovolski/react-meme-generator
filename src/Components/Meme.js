@@ -13,6 +13,7 @@ function Meme(){
     }
 
     return(
+        <div>
         <main>
             <div className="form">
                 <input type="text" className="form--input" placeholder="top text" />
@@ -21,7 +22,9 @@ function Meme(){
             </div>
             <img src={memeImage} className="meme--image"/>   
         </main>
+        </div>
     )
 }
 
 export default Meme;
+
