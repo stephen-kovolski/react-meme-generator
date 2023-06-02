@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import memesData from "../memesData";
 
 function Meme(){
 
-    const [memeImage, setMemeImage] = React.useState("")
+    const [memeImage, setMemeImage] = useState("")
 
     function handleClick(){
          let memesArray = memesData.data.memes;
