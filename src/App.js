@@ -3,14 +3,13 @@ import Header from './Components/Header';
 import Meme from "./Components/Meme"
 
 
-function App() {
+export default function App() {
   return (
     <div>
     <Header />
     <Meme />
     </div>
-    
   );
 }
 
-export default App;
+
