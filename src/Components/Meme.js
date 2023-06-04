@@ -4,7 +4,7 @@ import memesData from "../memesData";
 function Meme(){
 
     const [memeImage, setMemeImage] = useState("")
-
+// handle click function
     function handleClick(){
          let memesArray = memesData.data.memes;
          let randomNumber = Math.floor(Math.random() * memesArray.length)
