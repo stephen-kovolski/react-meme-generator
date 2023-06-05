@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import memesData from "../memesData";
-
+// component
 function Meme(){
 
     const [memeImage, setMemeImage] = useState("")
